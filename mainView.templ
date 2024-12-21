@@ -11,8 +11,8 @@ templ mainView() {
         <body>
             <h1>Main view</h1>
             <p>Random string: </p>
-            <p hx-get="http://127.0.0.1:3000/random" hx-trigger="load, every 2s" id="randomString"></p>
+            <p hx-get="http://127.0.0.1:3000/random" hx-trigger="every 2s" id="randomString"></p>
         </body>
-
+        <script src="static/saveString.js"></script>
     </html>
 }

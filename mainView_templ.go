@@ -29,7 +29,7 @@ func mainView() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html><head><title>Page Title</title><script src=\"/static/htmx.min.js\"></script></head><body><h1>Main view</h1><p>Random string: </p><p hx-get=\"http://127.0.0.1:3000/random\" hx-trigger=\"load, every 2s\" id=\"randomString\"></p></body></html>")
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<!doctype html><html><head><title>Page Title</title><script src=\"/static/htmx.min.js\"></script></head><body><h1>Main view</h1><p>Random string: </p><p hx-get=\"http://127.0.0.1:3000/random\" hx-trigger=\"every 2s\" id=\"randomString\"></p></body><script src=\"static/saveString.js\"></script></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
