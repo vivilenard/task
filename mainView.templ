@@ -1,0 +1,18 @@
+package main
+
+templ mainView() {
+    <!DOCTYPE html>
+    <html>
+        <head>
+        <title>Page Title</title>
+        <script src="/static/htmx.min.js"></script>
+        </head>
+
+        <body>
+            <h1>Main view</h1>
+            <p>Random string: </p>
+            <p hx-get="http://127.0.0.1:3000/random" hx-trigger="load, every 2s" id="randomString"></p>
+        </body>
+
+    </html>
+}
